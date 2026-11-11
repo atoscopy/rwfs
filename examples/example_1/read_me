@@ -1,0 +1,57 @@
+RWFS Example: Carbon Ion (C⁺)
+=============================
+
+This example shows the complete workflow for generating relativistic
+radial wavefunctions for the carbon ion (Z = 6, Ne = 5) using RWFS.
+
+
+1. Input Preparation
+--------------------
+Edit the input file (e.g. input-carbon_II) with:
+
+  - Atomic number          : 6
+  - Number of electrons    : 5
+  - Orbitals (spectroscopic notation), for example:
+      1s 2s 2p- 2p 3s 3p- 3p 3d- 3d
+      4s 4p- 4p 4d- 4d 4f- 4f
+      5s 5p- 5p 5d- 5d 5f- 5f 5g- 5g
+  - Potential and output options as required
+
+
+2. Run the Calculation
+----------------------
+python /path/to/rwfs.py < input-carbon_II > output_carbon_II
+
+This produces:
+  radial.rwf          – ASCII radial wavefunctions
+  grasp_carbon        – GRASP-compatible ASCII orbitals
+  potential_carbon    – potential data (if requested)
+  summary.dat         – energies and radial moments
+
+
+3. Convert ASCII to Binary GRASP Format
+---------------------------------------
+(a) Compile the converter
+    gfortran -O2 -o readrwf readrwf_grasp.f
+
+(b) Convert
+    ./readrwf << EOF
+    2
+    grasp_carbon
+    carbon_TF_rwf.w
+    EOF
+
+  - 2               selects ASCII → binary conversion
+  - grasp_carbon    input ASCII file
+  - carbon_TF_rwf.w binary output file (GRASP-compatible)
+
+
+4. Output Files
+---------------
+radial.rwf          Full radial wavefunctions (ASCII)
+grasp_carbon        GRASP-format orbitals (ASCII)
+carbon_TF_rwf.w     Binary GRASP wavefunctions
+summary.dat         Orbital energies and radial moments
+potential_carbon    Central potential V(r)
+
+All 25 requested orbitals converged successfully.
