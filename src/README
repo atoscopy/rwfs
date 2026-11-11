@@ -1,0 +1,42 @@
+# RWFS: Relativistic Wave Function Solver
+
+**RWFS** (Relativistic Wave Function Solver) is a Python package 
+for numerically solving the radial Dirac equation for bound atomic 
+orbitals in central potentials. 
+It implements a high-precision power-series integration 
+method (outward + inward) with automatic convergence control, 
+spline interpolation, and support for multiple potential models.
+
+## Features
+
+- **Relativistic Dirac radial solver** (large P(r) + small Q(r) components)
+- **Multiple potentials**:
+  - Thomas-Fermi (self-consistent screened)
+  - Pure Coulomb (unscreened)
+  - Yukawa / Screened Coulomb
+  - Multi-Yukawa
+  - Screened-hydrogenic
+  - User-provided tabulated potential (r, V(r))
+  - Finite nuclear size: uniformly charged sphere (option 8) and
+    Fermi charge distribution (option 9; a = t/(4 ln 3), t = 2.3 fm,
+    c fixed by the rms radius).
+- **Flexible radial grids**:
+  - Exponential (default, similar to GRASP)
+  - Linear-logarithmic
+- **Automatic node counting** and energy adjustment to match desired principal quantum number 'n'
+- **High-accuracy power series expansion** with convergence checking
+- **Normalization** and computation of expectation values ('<r>', '<r^2>', '<1/r>')
+- **Output formats**:
+  - Custom 'radial.rwf' (human-readable)
+  - GRASP-compatible '.rwf' format
+- **Potential output** option for inspection
+
+## Installation / Usage
+
+The package consists of multiple interdependent modules. To run:
+
+1. Place all '.py' files in the same directory.
+2. Ensure Python >= 3 is installed.
+3. Run the main script:
+
+python rwfs.py
