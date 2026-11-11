@@ -1,0 +1,75 @@
+RWFS Example: Neutral Argon (Ar)
+================================
+
+This example demonstrates the generation of relativistic radial wavefunctions
+for neutral argon (Z = 18, Ne = 18) using RWFS with a Multi-Yukawa potential.
+
+
+1. Input Preparation
+--------------------
+Edit the input file (e.g. input-ar) with:
+
+  - Atomic number          : 18
+  - Number of electrons    : 18
+  - Orbitals (spectroscopic notation):
+      1s 2s 2p- 2p 3s 3p- 3p
+  - Potential              : Multi-Yukawa (option 4)
+  - Potential parameters:
+      n_max   = 3
+      c1      =  2.1912    alpha1 = 5.5470
+      c2      = -2.2852    alpha2 = 4.5687
+      c3      =  1.0940    alpha3 = 2.0446
+
+
+2. Run the Calculation
+----------------------
+python /path/to/rwfs.py < input-ar > output-ar
+
+This produces:
+  radial.rwf       – ASCII radial wavefunctions
+  grasp_Ar         – GRASP-compatible ASCII orbitals
+  potential_Ar     – potential data
+  summary.dat      – energies and radial moments
+
+
+3. Convert ASCII to Binary GRASP Format
+---------------------------------------
+(a) Compile the converter
+    gfortran -O2 -o readrwf readrwf_grasp.f
+
+(b) Convert
+    ./readrwf << EOF
+    2
+    grasp_Ar
+    argon_rwf.w
+    EOF
+
+  - 2            selects ASCII → binary conversion
+  - grasp_Ar     input ASCII file
+  - argon_rwf.w  binary output file (GRASP-compatible)
+
+
+4. Summary of Results
+---------------------
+Potential used : Multi-Yukawa (n_max = 3)
+
+Orbital   n  kappa      E (a.u.)           E (eV)          <r>           <r²>         NP
+------------------------------------------------------------------------------------------
+1s        1   -1     -106.28047142     -2892.040       0.08707312     0.01022419    1619
+2s        2   -1       -8.36642272      -227.662       0.44146388     0.23193215    1726
+2p-       2    1       -5.67601672      -154.452       0.41746093     0.21818257    1742
+2p        2   -2       -5.61448156      -152.778       0.42005610     0.22073281    1742
+3s        3   -1       -0.10063243        -2.738       2.17579281     6.16650872    1911
+3p-       3    1       -5.8208e-11     -1.58e-09       1.31856225     1.85969805    1594
+3p        3   -2       -2.8522e-09     -7.76e-08       12.5237157     22753.9271    2639
+
+All 7 requested orbitals converged.
+
+
+5. Output Files
+---------------
+radial.rwf       Full radial wavefunctions (ASCII)
+grasp_Ar         GRASP-format orbitals (ASCII)
+argon_rwf.w      Binary GRASP wavefunctions (after conversion)
+summary.dat      Orbital energies and radial moments
+potential_Ar     Central potential V(r)

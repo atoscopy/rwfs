@@ -1,0 +1,758 @@
+ Enter the atomic number (Z) of the atom:
+ Enter the number of electrons in the atom/ion:
+ Positive or negative ions are all allowed.
+ If the atom is neutral ( press Enter )
+ i.e., the atomic number = the number of electrons
+ The number of electrons in atom/ion is  18
+ Enter the orbital you want either as spectroscopic notation
+ as (1s, 2p-, 2p, ...) or as (n,kappa) values without brackets.
+ Press ( 1 ) for spectroscopic notation or press ( 2 ) for
+ n,kappa  notation: 
+ Enter ALL the orbitals you want, separated by spaces,
+ in spectroscopic notation, for example:
+ 1s 2s 2p- 2p 3d- 4f
+ The following  7  orbital(s) will be calculated:
+   1 ) n = 1 , kappa = -1 , spec =  1s
+   2 ) n = 2 , kappa = -1 , spec =  2s
+   3 ) n = 2 , kappa = 1 , spec =  2p-
+   4 ) n = 2 , kappa = -2 , spec =  2p
+   5 ) n = 3 , kappa = -1 , spec =  3s
+   6 ) n = 3 , kappa = 1 , spec =  3p-
+   7 ) n = 3 , kappa = -2 , spec =  3p
+ Do you want to change the default parameters (y/n):
+ Do you want to change the relative error (y/n):
+ Do you want to change the grid parameters?
+ Do you want to print the potential function ( V(r) )?
+ the potential data r, V(r) are saved in file name
+ 'potential' if you want another file name, enter
+ the file name: (press enter to save the default)
+ Do you want to print the output orbital in GRASP format?
+ to save the output as in form used in GRASP package
+ the default file name is 'grasp.rwf', enter the 
+ file name: (press enter to save the default)
+ Choose which potential function used:
+
+ 1 - Thomas Fermi potential 
+   V(r) = -1/r [ Z phi_m - Z_{inf} (phi_m -1)]
+ 2 - Couloumb potential (Unscreened) 
+    V(r) = -Z/r
+ 3- Yukawa potential
+    V(r) = -Z/r * e^{- alpha r}
+ 4- Multi Yukawa potential
+    V(r) = -Z/r sum_{i=1}^{n_max} c_i e^{- alpha_i r}
+ 5- Screened potential
+    V(r) = -1/r [ 1+(Z-1) e^{-alpha r}] 
+ 6- Screened-hydrogenic potential
+    V(r) = -Z_{eff}/r  = - (Z-alpha)/r 
+ 7- Read from input file containing two columns of
+    r , v(r) in header and their values along the file
+
+
+ Enter the index/number of potential used:
+
+
+ ================================================
+ Orbital  1 / 7 :  1s  (n = 1 , kappa = -1 )
+ ================================================
+ Starting calculations ...
+
+
+ the orbital defined by n = 1 ,kappa = -1
+ has  0  node/s.
+ EMIN =  -18778.8650493352  EMAX =  -5.297805608640831e-07
+ initial E used =  -1.0
+
+
+ cycle number  1
+ initial energy E =  -1.0
+ our orbital have  12  while the correct nodes are : 0
+ the next new energy is E =  -9389.9325246676
+
+
+ cycle number  2
+ initial energy E =  -9389.9325246676
+ the orbital has the correct count of nodes  0
+ the next new energy is E =  -9389.9325246676
+
+
+ ===================== 
+ iteration number  1
+ initial energy E =  -4694.96626259869
+ the orbital has the correct count of nodes  0
+ the next new energy is E =  -4694.96626259869
+ DE (energy correction): 14452.825775103855
+ consestency = 4694.96626206891  eta (relative error): 1e-10
+ ===================== 
+ iteration number  2
+ initial energy E =  -2347.4831315642355
+ the orbital has the correct count of nodes  0
+ the next new energy is E =  -2347.4831315642355
+ DE (energy correction): 6250.503938197958
+ consestency = 2347.483131034455  eta (relative error): 1e-10
+ ===================== 
+ iteration number  3
+ initial energy E =  -1173.741566047008
+ the orbital has the correct count of nodes  0
+ the next new energy is E =  -1173.741566047008
+ DE (energy correction): 2206.9573477093527
+ consestency = 1173.7415655172274  eta (relative error): 1e-10
+ ===================== 
+ iteration number  4
+ initial energy E =  -586.8707832883944
+ the orbital has the correct count of nodes  0
+ the next new energy is E =  -586.8707832883944
+ DE (energy correction): 685.2927019387153
+ consestency = 586.8707827586137  eta (relative error): 1e-10
+ ===================== 
+ iteration number  5
+ initial energy E =  -293.43539190908746
+ the orbital has the correct count of nodes  0
+ the next new energy is E =  -293.43539190908746
+ DE (energy correction): 163.60123666938478
+ consestency = 293.4353913793069  eta (relative error): 1e-10
+ ===================== 
+ iteration number  6
+ initial energy E =  -129.83415523970268
+ the orbital has the correct count of nodes  0
+ the next new energy is E =  -129.83415523970268
+ DE (energy correction): -13.667037245908256
+ consestency = 163.60123666938478  eta (relative error): 1e-10
+ ===================== 
+ iteration number  7
+ initial energy E =  -143.50119248561094
+ the orbital has the correct count of nodes  0
+ the next new energy is E =  -143.50119248561094
+ DE (energy correction): -15.12496853815704
+ consestency = 13.667037245908261  eta (relative error): 1e-10
+ ===================== 
+ iteration number  8
+ initial energy E =  -158.626161023768
+ the orbital has the correct count of nodes  0
+ the next new energy is E =  -158.626161023768
+ DE (energy correction): -3.9649188626106624
+ consestency = 15.124968538157049  eta (relative error): 1e-10
+ ===================== 
+ iteration number  9
+ initial energy E =  -162.59107988637865
+ the orbital has the correct count of nodes  0
+ the next new energy is E =  -162.59107988637865
+ DE (energy correction): -0.11369783859845983
+ consestency = 3.9649188626106593  eta (relative error): 1e-10
+ ===================== 
+ iteration number  10
+ initial energy E =  -162.7047777249771
+ the orbital has the correct count of nodes  0
+ the next new energy is E =  -162.7047777249771
+ DE (energy correction): -8.03903371779047e-05
+ consestency = 0.11369783859845484  eta (relative error): 1e-10
+ ===================== 
+ iteration number  11
+ initial energy E =  -162.7048581153143
+ the orbital has the correct count of nodes  0
+ the next new energy is E =  -162.7048581153143
+ DE (energy correction): -4.01600435833363e-11
+ consestency = 8.039033718887367e-05  eta (relative error): 1e-10
+ ===================== 
+ iteration number  12
+ initial energy E =  -162.70485811535445
+ the orbital has the correct count of nodes  0
+ the next new energy is E =  -162.70485811535445
+ DE (energy correction): 5.635932339281928e-14
+ consestency = 4.015987542516086e-11  eta (relative error): 1e-10
+
+
+ Final Output orbital data ( 1s ):
+ < r >  =  0.0828519858846891
+ < r^{2} >  =  0.009165895617378858
+ < 1/r >  =  18.157319630625377
+ The orbital energy =  -162.704858115354454639600589871407  a.u.
+ The orbital energy in eV unit is =  -4427.426357841695  eV.
+
+
+ Orbital  1s  calculated ( 1 / 7 )
+
+
+ ================================================
+ Orbital  2 / 7 :  2s  (n = 2 , kappa = -1 )
+ ================================================
+ Starting calculations ...
+
+
+ the orbital defined by n = 2 ,kappa = -1
+ has  1  node/s.
+ EMIN =  -18778.8650493352  EMAX =  -5.297805608640831e-07
+ initial E used =  -1.0
+
+
+ cycle number  1
+ initial energy E =  -1.0
+ our orbital have  12  while the correct nodes are : 1
+ the next new energy is E =  -9389.9325246676
+
+
+ cycle number  2
+ initial energy E =  -9389.9325246676
+ our orbital have  0  while the correct nodes are : 1
+ the next new energy is E =  -4695.4662623338
+
+
+ cycle number  3
+ initial energy E =  -4695.4662623338
+ our orbital have  0  while the correct nodes are : 1
+ the next new energy is E =  -2348.2331311669
+
+
+ cycle number  4
+ initial energy E =  -2348.2331311669
+ our orbital have  0  while the correct nodes are : 1
+ the next new energy is E =  -1174.61656558345
+
+
+ cycle number  5
+ initial energy E =  -1174.61656558345
+ our orbital have  0  while the correct nodes are : 1
+ the next new energy is E =  -587.808282791725
+
+
+ cycle number  6
+ initial energy E =  -587.808282791725
+ our orbital have  0  while the correct nodes are : 1
+ the next new energy is E =  -294.4041413958625
+
+
+ cycle number  7
+ initial energy E =  -294.4041413958625
+ our orbital have  0  while the correct nodes are : 1
+ the next new energy is E =  -147.70207069793125
+
+
+ cycle number  8
+ initial energy E =  -147.70207069793125
+ our orbital have  0  while the correct nodes are : 1
+ the next new energy is E =  -74.35103534896562
+
+
+ cycle number  9
+ initial energy E =  -74.35103534896562
+ the orbital has the correct count of nodes  1
+ the next new energy is E =  -74.35103534896562
+
+
+ ===================== 
+ iteration number  1
+ initial energy E =  -26.757139063244054
+ our orbital have  2  while the correct nodes are : 1
+ the next new energy is E =  -50.55408720610484
+ initial energy E =  -50.55408720610484
+ the orbital has the correct count of nodes  1
+ the next new energy is E =  -50.55408720610484
+ DE (energy correction): 11.76615940447351
+ consestency = 23.796948142860785  eta (relative error): 1e-10
+ ===================== 
+ iteration number  2
+ initial energy E =  -38.78792780163133
+ the orbital has the correct count of nodes  1
+ the next new energy is E =  -38.78792780163133
+ DE (energy correction): -1.6446982145510618
+ consestency = 11.766159404473512  eta (relative error): 1e-10
+ ===================== 
+ iteration number  3
+ initial energy E =  -40.43262601618239
+ the orbital has the correct count of nodes  1
+ the next new energy is E =  -40.43262601618239
+ DE (energy correction): -0.2827875343732465
+ consestency = 1.6446982145510631  eta (relative error): 1e-10
+ ===================== 
+ iteration number  4
+ initial energy E =  -40.71541355055564
+ the orbital has the correct count of nodes  1
+ the next new energy is E =  -40.71541355055564
+ DE (energy correction): -0.004948930067806864
+ consestency = 0.28278753437324866  eta (relative error): 1e-10
+ ===================== 
+ iteration number  5
+ initial energy E =  -40.72036248062344
+ the orbital has the correct count of nodes  1
+ the next new energy is E =  -40.72036248062344
+ DE (energy correction): -1.3620665303119497e-06
+ consestency = 0.004948930067804724  eta (relative error): 1e-10
+ ===================== 
+ iteration number  6
+ initial energy E =  -40.72036384268997
+ the orbital has the correct count of nodes  1
+ the next new energy is E =  -40.72036384268997
+ DE (energy correction): -1.0573608406450481e-13
+ consestency = 1.3620665271218968e-06  eta (relative error): 1e-10
+ ===================== 
+ iteration number  7
+ initial energy E =  -40.72036384269008
+ the orbital has the correct count of nodes  1
+ the next new energy is E =  -40.72036384269008
+ DE (energy correction): -9.990811092709274e-15
+ consestency = 1.0658141036401503e-13  eta (relative error): 1e-10
+
+
+ Final Output orbital data ( 2s ):
+ < r >  =  0.3312298511593744
+ < r^{2} >  =  0.1281246482458337
+ < 1/r >  =  4.549194447083284
+ The orbital energy =  -40.720363842690076694452727679163  a.u.
+ The orbital energy in eV unit is =  -1108.057953931594  eV.
+
+
+ Orbital  2s  calculated ( 2 / 7 )
+
+
+ ================================================
+ Orbital  3 / 7 :  2p-  (n = 2 , kappa = 1 )
+ ================================================
+ Starting calculations ...
+
+
+ the orbital defined by n = 2 ,kappa = 1
+ has  0  node/s.
+ EMIN =  -80.99997084293986  EMAX =  -5.297805599978256e-07
+ initial E used =  -1.0
+
+
+ cycle number  1
+ initial energy E =  -1.0
+ our orbital have  11  while the correct nodes are : 0
+ the next new energy is E =  -40.99998542146993
+
+
+ cycle number  2
+ initial energy E =  -40.99998542146993
+ the orbital has the correct count of nodes  0
+ the next new energy is E =  -40.99998542146993
+
+
+ ===================== 
+ iteration number  1
+ initial energy E =  -40.71630948304435
+ the orbital has the correct count of nodes  0
+ the next new energy is E =  -40.71630948304435
+ DE (energy correction): -0.004053450623466505
+ consestency = 0.28367593842558136  eta (relative error): 1e-10
+ ===================== 
+ iteration number  2
+ initial energy E =  -40.720362933667815
+ the orbital has the correct count of nodes  0
+ the next new energy is E =  -40.720362933667815
+ DE (energy correction): -9.073306666888969e-07
+ consestency = 0.004053450623466404  eta (relative error): 1e-10
+ ===================== 
+ iteration number  3
+ initial energy E =  -40.72036384099848
+ the orbital has the correct count of nodes  0
+ the next new energy is E =  -40.72036384099848
+ DE (energy correction): -4.576698799240739e-14
+ consestency = 9.073306657114699e-07  eta (relative error): 1e-10
+ ===================== 
+ iteration number  4
+ initial energy E =  -40.72036384099852
+ the orbital has the correct count of nodes  0
+ the next new energy is E =  -40.72036384099852
+ DE (energy correction): -1.405126824328322e-15
+ consestency = 4.263256414560601e-14  eta (relative error): 1e-10
+
+
+ Final Output orbital data ( 2p- ):
+ < r >  =  0.27567429560868884
+ < r^{2} >  =  0.0913280240916028
+ < 1/r >  =  4.5491944470360535
+ The orbital energy =  -40.720363840998523130565445171669  a.u.
+ The orbital energy in eV unit is =  -1108.0579538855645  eV.
+
+
+ Orbital  2p-  calculated ( 3 / 7 )
+
+
+ ================================================
+ Orbital  4 / 7 :  2p  (n = 2 , kappa = -2 )
+ ================================================
+ Starting calculations ...
+
+
+ the orbital defined by n = 2 ,kappa = -2
+ has  0  node/s.
+ EMIN =  -80.99997084293986  EMAX =  -5.297805599978256e-07
+ initial E used =  -1.0
+
+
+ cycle number  1
+ initial energy E =  -1.0
+ our orbital have  11  while the correct nodes are : 0
+ the next new energy is E =  -40.99998542146993
+
+
+ cycle number  2
+ initial energy E =  -40.99998542146993
+ the orbital has the correct count of nodes  0
+ the next new energy is E =  -40.99998542146993
+
+
+ ===================== 
+ iteration number  1
+ initial energy E =  -40.533188207497716
+ the orbital has the correct count of nodes  0
+ the next new energy is E =  -40.533188207497716
+ DE (energy correction): -0.010572919922429575
+ consestency = 0.46679721397221385  eta (relative error): 1e-10
+ ===================== 
+ iteration number  2
+ initial energy E =  -40.54376112742015
+ the orbital has the correct count of nodes  0
+ the next new energy is E =  -40.54376112742015
+ DE (energy correction): -6.0825572065503275e-06
+ consestency = 0.010572919922431367  eta (relative error): 1e-10
+ ===================== 
+ iteration number  3
+ initial energy E =  -40.543767209977354
+ the orbital has the correct count of nodes  0
+ the next new energy is E =  -40.543767209977354
+ DE (energy correction): -2.015519343050649e-12
+ consestency = 6.082557206354977e-06  eta (relative error): 1e-10
+ ===================== 
+ iteration number  4
+ initial energy E =  -40.54376720997937
+ the orbital has the correct count of nodes  0
+ the next new energy is E =  -40.54376720997937
+ DE (energy correction): 2.0413767822931185e-14
+ consestency = 2.0179413695586845e-12  eta (relative error): 1e-10
+
+
+ Final Output orbital data ( 2p ):
+ < r >  =  0.27729799765765323
+ < r^{2} >  =  0.09229962381930108
+ < 1/r >  =  4.5097365687775115
+ The orbital energy =  -40.543767209979371557437843875960  a.u.
+ The orbital energy in eV unit is =  -1103.2525129913172  eV.
+
+
+ Orbital  2p  calculated ( 4 / 7 )
+
+
+ ================================================
+ Orbital  5 / 7 :  3s  (n = 3 , kappa = -1 )
+ ================================================
+ Starting calculations ...
+
+
+ the orbital defined by n = 3 ,kappa = -1
+ has  2  node/s.
+ EMIN =  -18778.8650493352  EMAX =  -5.297805608640831e-07
+ initial E used =  -1.0
+
+
+ cycle number  1
+ initial energy E =  -1.0
+ our orbital have  12  while the correct nodes are : 2
+ the next new energy is E =  -9389.9325246676
+
+
+ cycle number  2
+ initial energy E =  -9389.9325246676
+ our orbital have  0  while the correct nodes are : 2
+ the next new energy is E =  -4695.4662623338
+
+
+ cycle number  3
+ initial energy E =  -4695.4662623338
+ our orbital have  0  while the correct nodes are : 2
+ the next new energy is E =  -2348.2331311669
+
+
+ cycle number  4
+ initial energy E =  -2348.2331311669
+ our orbital have  0  while the correct nodes are : 2
+ the next new energy is E =  -1174.61656558345
+
+
+ cycle number  5
+ initial energy E =  -1174.61656558345
+ our orbital have  0  while the correct nodes are : 2
+ the next new energy is E =  -587.808282791725
+
+
+ cycle number  6
+ initial energy E =  -587.808282791725
+ our orbital have  0  while the correct nodes are : 2
+ the next new energy is E =  -294.4041413958625
+
+
+ cycle number  7
+ initial energy E =  -294.4041413958625
+ our orbital have  0  while the correct nodes are : 2
+ the next new energy is E =  -147.70207069793125
+
+
+ cycle number  8
+ initial energy E =  -147.70207069793125
+ our orbital have  0  while the correct nodes are : 2
+ the next new energy is E =  -74.35103534896562
+
+
+ cycle number  9
+ initial energy E =  -74.35103534896562
+ our orbital have  1  while the correct nodes are : 2
+ the next new energy is E =  -37.67551767448281
+
+
+ cycle number  10
+ initial energy E =  -37.67551767448281
+ our orbital have  1  while the correct nodes are : 2
+ the next new energy is E =  -19.337758837241406
+
+
+ cycle number  11
+ initial energy E =  -19.337758837241406
+ the orbital has the correct count of nodes  2
+ the next new energy is E =  -19.337758837241406
+
+
+ ===================== 
+ iteration number  1
+ initial energy E =  -17.880354075086196
+ the orbital has the correct count of nodes  2
+ the next new energy is E =  -17.880354075086196
+ DE (energy correction): -0.1890980339012045
+ consestency = 1.4574047621552104  eta (relative error): 1e-10
+ ===================== 
+ iteration number  2
+ initial energy E =  -18.0694521089874
+ the orbital has the correct count of nodes  2
+ the next new energy is E =  -18.0694521089874
+ DE (energy correction): -0.008815908125404585
+ consestency = 0.18909803390120317  eta (relative error): 1e-10
+ ===================== 
+ iteration number  3
+ initial energy E =  -18.078268017112805
+ the orbital has the correct count of nodes  2
+ the next new energy is E =  -18.078268017112805
+ DE (energy correction): -1.5879969057661438e-05
+ consestency = 0.008815908125406224  eta (relative error): 1e-10
+ ===================== 
+ iteration number  4
+ initial energy E =  -18.078283897081864
+ the orbital has the correct count of nodes  2
+ the next new energy is E =  -18.078283897081864
+ DE (energy correction): -5.127699489818941e-11
+ consestency = 1.58799690588296e-05  eta (relative error): 1e-10
+ ===================== 
+ iteration number  5
+ initial energy E =  -18.07828389713314
+ the orbital has the correct count of nodes  2
+ the next new energy is E =  -18.07828389713314
+ DE (energy correction): 3.280258117865415e-15
+ consestency = 5.127631652612763e-11  eta (relative error): 1e-10
+
+
+ Final Output orbital data ( 3s ):
+ < r >  =  0.7464194172969445
+ < r^{2} >  =  0.6330896594617984
+ < 1/r >  =  2.0174686680022114
+ The orbital energy =  -18.078283897133140101232129381970  a.u.
+ The orbital energy in eV unit is =  -491.9353457409699  eV.
+
+
+ Orbital  3s  calculated ( 5 / 7 )
+
+
+ ================================================
+ Orbital  6 / 7 :  3p-  (n = 3 , kappa = 1 )
+ ================================================
+ Starting calculations ...
+
+
+ the orbital defined by n = 3 ,kappa = 1
+ has  1  node/s.
+ EMIN =  -80.99997084293986  EMAX =  -5.297805599978256e-07
+ initial E used =  -1.0
+
+
+ cycle number  1
+ initial energy E =  -1.0
+ our orbital have  11  while the correct nodes are : 1
+ the next new energy is E =  -40.99998542146993
+
+
+ cycle number  2
+ initial energy E =  -40.99998542146993
+ our orbital have  0  while the correct nodes are : 1
+ the next new energy is E =  -20.999992710734965
+
+
+ cycle number  3
+ initial energy E =  -20.999992710734965
+ the orbital has the correct count of nodes  1
+ the next new energy is E =  -20.999992710734965
+
+
+ ===================== 
+ iteration number  1
+ initial energy E =  -17.437544550902597
+ the orbital has the correct count of nodes  1
+ the next new energy is E =  -17.437544550902597
+ DE (energy correction): -0.5262513316757056
+ consestency = 3.5624481598323676  eta (relative error): 1e-10
+ ===================== 
+ iteration number  2
+ initial energy E =  -17.963795882578303
+ the orbital has the correct count of nodes  1
+ the next new energy is E =  -17.963795882578303
+ DE (energy correction): -0.11154316331815199
+ consestency = 0.5262513316757058  eta (relative error): 1e-10
+ ===================== 
+ iteration number  3
+ initial energy E =  -18.075339045896456
+ the orbital has the correct count of nodes  1
+ the next new energy is E =  -18.075339045896456
+ DE (energy correction): -0.0029430685510913597
+ consestency = 0.11154316331815295  eta (relative error): 1e-10
+ ===================== 
+ iteration number  4
+ initial energy E =  -18.078282114447546
+ the orbital has the correct count of nodes  1
+ the next new energy is E =  -18.078282114447546
+ DE (energy correction): -1.7824106314126433e-06
+ consestency = 0.0029430685510902777  eta (relative error): 1e-10
+ ===================== 
+ iteration number  5
+ initial energy E =  -18.078283896858178
+ the orbital has the correct count of nodes  1
+ the next new energy is E =  -18.078283896858178
+ DE (energy correction): -6.489613936711805e-13
+ consestency = 1.7824106315345034e-06  eta (relative error): 1e-10
+ ===================== 
+ iteration number  6
+ initial energy E =  -18.078283896858828
+ the orbital has the correct count of nodes  1
+ the next new energy is E =  -18.078283896858828
+ DE (energy correction): 1.974353446354217e-15
+ consestency = 6.501466032204917e-13  eta (relative error): 1e-10
+
+
+ Final Output orbital data ( 3p- ):
+ < r >  =  0.6908638617351137
+ < r^{2} >  =  0.5501571399185599
+ < 1/r >  =  2.017468668040042
+ The orbital energy =  -18.078283896858827972664585104212  a.u.
+ The orbital energy in eV unit is =  -491.93534573350547  eV.
+
+
+ Orbital  3p-  calculated ( 6 / 7 )
+
+
+ ================================================
+ Orbital  7 / 7 :  3p  (n = 3 , kappa = -2 )
+ ================================================
+ Starting calculations ...
+
+
+ the orbital defined by n = 3 ,kappa = -2
+ has  1  node/s.
+ EMIN =  -80.99997084293986  EMAX =  -5.297805599978256e-07
+ initial E used =  -1.0
+
+
+ cycle number  1
+ initial energy E =  -1.0
+ our orbital have  11  while the correct nodes are : 1
+ the next new energy is E =  -40.99998542146993
+
+
+ cycle number  2
+ initial energy E =  -40.99998542146993
+ our orbital have  0  while the correct nodes are : 1
+ the next new energy is E =  -20.999992710734965
+
+
+ cycle number  3
+ initial energy E =  -20.999992710734965
+ the orbital has the correct count of nodes  1
+ the next new energy is E =  -20.999992710734965
+
+
+ ===================== 
+ iteration number  1
+ initial energy E =  -17.368936429065307
+ the orbital has the correct count of nodes  1
+ the next new energy is E =  -17.368936429065307
+ DE (energy correction): -0.5281826118659299
+ consestency = 3.6310562816696574  eta (relative error): 1e-10
+ ===================== 
+ iteration number  2
+ initial energy E =  -17.897119040931237
+ the orbital has the correct count of nodes  1
+ the next new energy is E =  -17.897119040931237
+ DE (energy correction): -0.12514329828692358
+ consestency = 0.5281826118659296  eta (relative error): 1e-10
+ ===================== 
+ iteration number  3
+ initial energy E =  -18.02226233921816
+ the orbital has the correct count of nodes  1
+ the next new energy is E =  -18.02226233921816
+ DE (energy correction): -0.0036749778401789363
+ consestency = 0.12514329828692183  eta (relative error): 1e-10
+ ===================== 
+ iteration number  4
+ initial energy E =  -18.02593731705834
+ the orbital has the correct count of nodes  1
+ the next new energy is E =  -18.02593731705834
+ DE (energy correction): -2.958284817806868e-06
+ consestency = 0.00367497784018056  eta (relative error): 1e-10
+ ===================== 
+ iteration number  5
+ initial energy E =  -18.025940275343157
+ the orbital has the correct count of nodes  1
+ the next new energy is E =  -18.025940275343157
+ DE (energy correction): -1.915461406793285e-12
+ consestency = 2.9582848171116893e-06  eta (relative error): 1e-10
+ ===================== 
+ iteration number  6
+ initial energy E =  -18.02594027534507
+ the orbital has the correct count of nodes  1
+ the next new energy is E =  -18.02594027534507
+ DE (energy correction): 1.991715663629857e-15
+ consestency = 1.91491267287347e-12  eta (relative error): 1e-10
+
+
+ Final Output orbital data ( 3p ):
+ < r >  =  0.693112191969048
+ < r^{2} >  =  0.5535988022653598
+ < 1/r >  =  2.0057712040282327
+ The orbital energy =  -18.025940275345071484025538666174  a.u.
+ The orbital energy in eV unit is =  -490.5110027099518  eV.
+
+
+ Orbital  3p  calculated ( 7 / 7 )
+ All  7  orbital(s) saved to  radial.rwf
+ All  7  orbital(s) saved to  grasp_Ar-TF  (GRASP format)
+
+
+ Finished  7  orbital(s) calculated.
+
+
+ ================================================
+ SUMMARY OF CALCULATION
+ ================================================
+atomic number (Z)         = 18      
+number of electrons (Ne)  = 18      
+potential used            = Coulomb potential (unscreened)
+potential constants:
+  Z          = 18
+
+Orbital        n   kappa            E (a.u.)          E (eV)             <r>           <r^2>   Pot      NP
+----------------------------------------------------------------------------------------------------------
+1s             1      -1   -1.6270485812E+02   -4.427426E+03  8.28519859E-02  9.16589562E-03     2    1604
+2s             2      -1   -4.0720363843E+01   -1.108058E+03  3.31229851E-01  1.28124648E-01     2    1664
+2p-            2       1   -4.0720363841E+01   -1.108058E+03  2.75674296E-01  9.13280241E-02     2    1664
+2p             2      -2   -4.0543767210E+01   -1.103253E+03  2.77297998E-01  9.22996238E-02     2    1664
+3s             3      -1   -1.8078283897E+01   -4.919353E+02  7.46419417E-01  6.33089659E-01     2    1701
+3p-            3       1   -1.8078283897E+01   -4.919353E+02  6.90863862E-01  5.50157140E-01     2    1701
+3p             3      -2   -1.8025940275E+01   -4.905110E+02  6.93112192E-01  5.53598802E-01     2    1701
+
+Orbitals NOT converged (excluded from the table above):
+  (none -- all requested orbitals converged)
+ summary saved to  summary.dat
