@@ -1,0 +1,95 @@
+Example: Atomic Radial Wavefunction Calculation
+===============================================
+
+This example demonstrates the generation of relativistic radial wavefunctions
+for an atomic system using RWFS. The program supports several central
+potentials, including
+
+  (a) Coulomb (unscreened),
+  (b) Thomas–Fermi,
+  (c) Multi-Yukawa.
+
+The same procedure applies to neutral atoms, ions, or user-defined
+electronic configurations.
+
+1. Input Preparation
+--------------------
+
+Prepare an input file (e.g. input.dat) containing
+
+  • Atomic number (Z)
+  • Number of electrons (Ne)
+  • List of orbitals in spectroscopic notation, for example
+
+      1s 2s 2p- 2p
+      3s 3p- 3p 3d- 3d
+      4s 4p- 4p ...
+
+  • Choice of central potential
+
+      1 : Thomas–Fermi
+      2 : Coulomb (unscreened)
+      3 : Multi-Yukawa
+
+For the Multi-Yukawa potential, the required screening parameters are
+specified automatically from the internal database.
+
+2. Run the Calculation
+----------------------
+
+Execute RWFS using
+
+    python /path/to/rwfs.py < input.dat > output.out
+
+or equivalently
+
+    python rwfs.py < input.dat > output.out
+
+depending on the installation.
+
+3. Program Output
+-----------------
+
+After successful execution, RWFS prints a summary of the calculation,
+including
+
+  • atomic number and number of electrons,
+  • selected central potential,
+  • orbital energies (a.u. and eV),
+  • expectation values ⟨r⟩ and ⟨r²⟩,
+  • radial mesh information,
+  • convergence status for each orbital.
+
+A typical summary is
+
+Orbital    n   κ        E (a.u.)      E (eV)      <r>      <r²>     NP
+-----------------------------------------------------------------------
+1s         1  -1      ...
+2s         2  -1      ...
+2p-        2   1      ...
+2p         2  -2      ...
+...
+ns         n  -1      ...
+
+Only converged orbitals are included in the summary table. If convergence
+fails for any requested orbital, it is reported separately at the end of
+the calculation.
+
+4. Output Files
+---------------
+
+RWFS produces several output files depending on the selected options.
+
+radial.rwf
+    Radial wavefunctions in ASCII format.
+
+grasp_*
+    Orbitals written in a format compatible with the GRASP package.
+
+summary.dat
+    Orbital energies and radial expectation values.
+
+potential_*
+    Radial central potential used in the calculation.
+
+Additional files may be generated depending on the selected output options.
